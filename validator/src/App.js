@@ -19,7 +19,7 @@ class App extends Component {
   }
 
   checkImage(url){
-    if(url.match(/\.(jpeg|jpg|gif|png)$/)){
+    if(url.match(/\.(jpeg|jpg|png)$/)){
       Jimp.read(url)
       .then(image => {
         // Do stuff with the image.
